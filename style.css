@@ -1,1 +1,107 @@
+/* =========================================
+   RWJ WASTEWISE
+   MAIN GAME STYLES
+========================================= */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eaf4f8;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Main game container */
+
+#game {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* =========================================
+   START SCREEN
+========================================= */
+
+#start-screen {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background:
+        linear-gradient(
+            rgba(230, 246, 250, 0.92),
+            rgba(230, 246, 250, 0.92)
+        );
+}
+
+#start-screen h1 {
+    font-size: 64px;
+    color: #173f5f;
+    margin-bottom: 10px;
+}
+
+#start-screen h2 {
+    font-size: 30px;
+    color: #286b8f;
+    margin-bottom: 25px;
+}
+
+#start-screen p {
+    max-width: 600px;
+
+    font-size: 20px;
+    line-height: 1.6;
+
+    color: #444;
+
+    margin-bottom: 40px;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+button {
+    border: none;
+
+    border-radius: 14px;
+
+    padding: 16px 35px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#start-button {
+    background: #e53935;
+    color: white;
+
+    min-width: 220px;
+}
